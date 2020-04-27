@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--This file is the main button layout for the controls, it has movement capabilities for
+    forwards, backwards, right, and left. They have not been tested much with the car because I
+    have had no access to the car or arduino board so I have no idea what that interaction might
+    look like.-->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="216dp"
+            android:text="Forwards"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.211"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="436dp"
+            android:text="Backwards"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="324dp"
+            android:text="Left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button27"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="324dp"
+            android:text="Right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
